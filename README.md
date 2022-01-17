@@ -16,5 +16,5 @@ npm start
 ```
 Als je de release zip hebt gedownload moet je unzippen en daarna op ```Magifer.exe``` clicken.
 
-En als je de installer hebt gedownload moet je dubble-clicken op de installer om te downloaden en daarna runnen door op het icoontje te drukken op je bureaublad!
+En als je de installer hebt gedownload moet je dubble-clicken op de installer om te downloaden en daarna runnen door op het icoontje waarbij ```Magifer``` staat te drukken op je bureaublad!
 
