@@ -91,7 +91,7 @@ ul > li {
     margin-left: 2rem;
 }
 
-.fas { 
+.fa-chevron-right, .fa-chevron-down, .fa-redo-alt { 
     color: white; 
     position: absolute;
     transform: translateY(1.5rem);
@@ -114,3 +114,20 @@ ul > li {
 }
 
 .onvoldoende { color: red }
+
+#load{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transform-origin: 80px 80px;
+    animation: rotate 1.5s infinite linear;
+    color:white;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}

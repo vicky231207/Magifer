@@ -18,10 +18,15 @@ const createWindow = () => {
     webPreferences: {
         nodeIntegration: true,
         contextIsolation: false
-    }
+    },
+    show: false
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  
+  mainWindow.webContents.on('did-finish-load', function() {
+    mainWindow.show();
+  });
 };
 
 app.on('ready', createWindow);
