@@ -27,8 +27,6 @@ const createWindow = () => {
   mainWindow.webContents.on('did-finish-load', function() {
     mainWindow.show();
   });
-
-  mainWindow.webContents.openDevTools();
 };
 
 app.on('ready', createWindow);
