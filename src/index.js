@@ -14,7 +14,7 @@ const createWindow = () => {
     width: 400,
     height: 700,
     resizable: false,
-    icon: __dirname + '/favicon.png',
+    icon: __dirname + '/favicon.ico',
     webPreferences: {
         nodeIntegration: true,
         contextIsolation: false
@@ -27,6 +27,8 @@ const createWindow = () => {
   mainWindow.webContents.on('did-finish-load', function() {
     mainWindow.show();
   });
+
+  mainWindow.webContents.openDevTools();
 };
 
 app.on('ready', createWindow);
